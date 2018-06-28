@@ -1,13 +1,18 @@
 #!/bin/bash
 # 
 # For CentOS7
-# Will update CentOS7, set up LAMP stack with PHP 7.030, mariadb 5.5.56, and apache
-# Make sure you have Git installed
+# This script will update CentOS7, set up LAMP stack with PHP 7.030, mariadb, and apache
+# 
 # INSTRUCTIONS:
-# 1. Copy this shell script to your home directory or the /tmp directory.
-# 2. Make it executable with the following command: 
-#      chmod a+x centos7-lamp-setup.sh
-# 3. Execute the script as a sudo user:
+# 1. Install Git if you dont have it already with the below command:
+# 		sudo yum -y install git
+# 2. Copy this shell script with the below command:
+# 		sudo git clone https://github.com/mitchellbryant/centos7-lamp
+# 3. Change to the cloned directory
+#		cd centos7-lamp
+# 4. Make the script executable with the following command: 
+#      sudo chmod a+x centos7-lamp-setup.sh
+# 5. Execute the script as a sudo user:
 #      sudo ./centos7-lamp-setup.sh
 
 #The following will install Apache, MariaDB, and allow web traffic
